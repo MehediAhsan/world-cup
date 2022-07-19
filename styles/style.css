@@ -44,3 +44,61 @@ header{
     margin-right: 75px;
     padding-top: 30px;
 }
+
+/* middle-container */
+main{
+    width: 80%;
+    margin: 50px auto;
+}
+.middle-container{
+    display: flex;
+}
+/* menu */
+.menu{
+    min-width: 312px;
+    height: 312px;
+    background-color: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.menu a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* content */
+.contents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    gap: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.content a{
+    text-decoration: none;
+    border: 1px solid #161616;
+    padding: 6px 10px;
+    width: 22%;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.content-info{
+    display: flex;
+    padding-left: 20px;
+    gap: 20px;
+}
+.content-title{
+    padding-left: 20px;
+}
