@@ -26,22 +26,26 @@ header{
     flex-direction: column;
     width: 100%;
     gap: 23px;
-    padding-left: 100px;
+    padding: 100px;
+    padding-right: 0px;
 }
 .header-title{
-    font-size: 40px;
+    font-size: 60px;
 }
 .header-description p{
     font-weight: 400;
     font-size: 14px;
 }
-.header-description .btn{
+.btn{
     width: 30%;
     padding: 16px 25px;
     background: #DD0000;
     border-radius: 5px;
     text-decoration: none;
     color: white;
+}
+.viewall-btn{
+    display: none;
 }
 .btn span{
     margin-right: 10px;
@@ -51,6 +55,7 @@ header{
     margin-right: 75px;
     padding-top: 30px;
     transition: transform 2s ease;
+    align-self: end;
 }
 .header-content img:hover{
     transform: scale(1.1);
@@ -207,5 +212,34 @@ footer{
         margin-right: 0px;
         width: 65%;
     }
-    
+}
+
+/* tablet */
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+
+    .header-title{
+        font-size: 30px;
+    }
+
+    .middle-container{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: row;
+        height: 70px;
+        background-color: white;
+        margin-bottom: 30px;  
+    }
+    .contents{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-link{
+        flex-wrap: wrap;
+    }
+    .viewall-btn{
+        display: block;
+        margin: 50px auto;
+        width: max-content;
+    }
 }
