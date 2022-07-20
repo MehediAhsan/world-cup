@@ -9,7 +9,7 @@ body{
 
 /* header-section */
 header{
-    width: 80%;
+    width: 85%;
     margin: 50px auto;
 }
 .header-content{
@@ -24,25 +24,31 @@ header{
 .header-description{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 85%;
     gap: 23px;
-    padding: 100px;
+    padding: 80px;
     padding-right: 0px;
 }
 .header-title{
-    font-size: 40px;
+    font-size: 55px;
+    line-height: 65px;
 }
 .header-description p{
     font-weight: 400;
     font-size: 14px;
 }
 .btn{
-    width: 30%;
+    width: max-content;
     padding: 16px 25px;
     background: #DD0000;
     border-radius: 5px;
     text-decoration: none;
     color: white;
+    transition: all 1s ease-out;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
 }
 .viewall-btn{
     display: none;
@@ -52,9 +58,9 @@ header{
 }
 .header-content img{
     width:100%;
-    margin-right: 75px;
+    margin-right: 45px;
     padding-top: 30px;
-    transition: transform 2s ease;
+    transition: transform 1.5s ease;
     align-self: end;
 }
 .header-content img:hover{
@@ -63,7 +69,7 @@ header{
 
 /* middle-container */
 main{
-    width: 80%;
+    width: 85%;
     margin: 50px auto;
 }
 .middle-container{
@@ -71,7 +77,7 @@ main{
 }
 /* menu */
 .menu{
-    min-width: 312px;
+    min-width: 190px;
     height: 312px;
     background-color: #161616;
     border-radius: 10px;
@@ -81,12 +87,17 @@ main{
     padding: 0px 20px;
     justify-content: space-evenly;
 }
+#bg-color{
+    background-color: #DD0000;
+    border: 0px;
+    color:white
+}
 .menu a{
     text-decoration: none;
     background-color: white;
     color: black;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 20px 0px;
     text-align: center;
     font-weight: 500;
     border: 1px solid rgb(194, 185, 185);
@@ -108,6 +119,7 @@ main{
 .content .content-img img{
     width: 100%;
 }
+/* upcoming match */
 .match-img{
     display: flex;
     justify-content: space-evenly;
@@ -116,13 +128,21 @@ main{
     align-items: center;
 }
 .match-img img{
-    width: 100%;
+    width: 45%;
 }
 .match-description{
     align-items: center;
 }
 .match-date{
-    font-size: 14px;
+    font-size: 12px;
+}
+/* all group */
+.group-title{
+    background-color: #ddd8c7;
+    margin: 10px 0px;
+    height: 0px;
+    justify-content: center;
+    text-align: center;
 }
 .content-description{
     padding: 20px;
@@ -140,16 +160,19 @@ main{
 }
 .content-info{
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 .content-icon{
     display: flex;
     margin-right: 5px;
 }
+.content-icon img{
+    margin-right: 8px;
+}
 .content-title{
     color:black;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 /* footer section */
@@ -159,7 +182,7 @@ footer{
     margin-top: 130px;
 }
 .footer-content{
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -192,7 +215,7 @@ footer{
     font-size: 1.7em;
 }
 
-/* mobile-device */
+/* mobile-devices */
 
 @media only screen and (max-width:576px) {
     .header-content{
@@ -200,13 +223,19 @@ footer{
     }
     .header-title{
         font-size: 22px;
+        line-height: 35px;
     }
     .header-description{
-        width: 65%;
+        width: 50%;
         align-items: center;
-        padding-left: 0px;
+        padding: 0px;
         margin-top: 30px;
         text-align: center;
+    }
+    .header-content img{
+        margin-right: 30px;
+        width: 80%;
+        padding-top: 30px;
     }
     .middle-container{
         flex-direction: column;
@@ -217,6 +246,7 @@ footer{
     }
     .menu a{
         width: max-content;
+        padding: 20px 30px;
     }
     .contents{
         grid-template-columns: repeat(1,1fr);
@@ -224,28 +254,31 @@ footer{
     .footer-link{
         flex-direction: column;
     }
-    .header-content img{
-        margin-right: 0px;
-        width: 65%;
-    }
 }
 
-/* tablet */
+/* tablet-devices */
 
 @media only screen and (min-width:577px) and (max-width:992px) {
 
     .header-title{
         font-size: 30px;
+        line-height: 45px;
     }
 
     .middle-container{
         flex-direction: column;
     }
     .menu{
+        min-width: 312px;
         flex-direction: row;
         height: 70px;
         background-color: white;
         margin-bottom: 30px;  
+        gap: 20px;
+    }
+    .menu a{
+        padding: 20px 30px;
+        width: -webkit-fill-available;
     }
     .contents{
         grid-template-columns: repeat(2,1fr);
