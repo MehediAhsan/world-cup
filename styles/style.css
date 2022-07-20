@@ -30,7 +30,7 @@ header{
     padding-right: 0px;
 }
 .header-title{
-    font-size: 60px;
+    font-size: 40px;
 }
 .header-description p{
     font-weight: 400;
@@ -107,6 +107,22 @@ main{
 }
 .content .content-img img{
     width: 100%;
+}
+.match-img{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 19px;
+    gap: 8px;
+    align-items: center;
+}
+.match-img img{
+    width: 100%;
+}
+.match-description{
+    align-items: center;
+}
+.match-date{
+    font-size: 14px;
 }
 .content-description{
     padding: 20px;
